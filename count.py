@@ -11,7 +11,7 @@ bucket = sys.argv[1]
 spark = SparkSession.builder.appName("CountOccurrences").getOrCreate()
 
 # Wczytanie danych z pliku CSV
-df = spark.read.csv("random_numbers_dataset.csv", header=True, inferSchema=True)
+df = spark.read.csv(f"gs://{bucket}/random_numbers_dataset.csv", header=True, inferSchema=True)
 
 # Zliczenie wystąpień każdej liczby
 result = df.groupBy("random_number").count()
