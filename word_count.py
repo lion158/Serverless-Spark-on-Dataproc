@@ -4,7 +4,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, split, size, sum
 import time
 
-table = "bigquery-public-data.github_repos.sample_contents"
+table = "bigquery-public-data:github_repos.sample_contents"
 
 spark = SparkSession.builder \
           .appName("pyspark-example") \
