@@ -9,7 +9,7 @@ if len(sys.argv) < 3:
     print("Please provide both a GCS bucket name and size.")
 
 bucket = sys.argv[1]
-size = sys.argv[2]
+size = int(sys.argv[2])
 
 # Inicjalizacja sesji Spark
 spark = SparkSession.builder.appName("GenerateRandomDataset").getOrCreate()
