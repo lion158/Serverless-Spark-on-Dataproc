@@ -11,6 +11,7 @@ if len(sys.argv) < 3:
 bucket = sys.argv[1]
 size = int(sys.argv[2])
 
+
 # Inicjalizacja sesji Spark
 spark = SparkSession.builder.appName("GenerateRandomDataset").getOrCreate()
 

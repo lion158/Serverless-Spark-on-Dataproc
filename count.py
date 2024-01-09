@@ -3,10 +3,11 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import col
 import time 
 
-if len(sys.argv) == 1:
-    print("Please provide a GCS bucket name.")
+if len(sys.argv) < 3:
+    print("Please provide both a GCS bucket name and output_file name.")
 
 bucket = sys.argv[1]
+output_file = sys.argv[2]
 
 # Inicjalizacja sesji Spark
 spark = SparkSession.builder.appName("CountOccurrences").getOrCreate()
@@ -29,7 +30,7 @@ print(f"Result time: {result_time}")
 # Wydruk wyników
 result.show()
 
-result.write.option("header", True).csv(f"gs://{bucket}/numbers_count")
+result.write.option("header", True).csv(f"gs://{bucket}/{output_file}")
 
 # Zakończenie sesji Spark
 spark.stop()
