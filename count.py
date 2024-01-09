@@ -24,7 +24,7 @@ result_start = time.time()
 result = df.groupBy("random_number").count()
 result_end = time.time()
 result_time = result_end - result_start
-print(f"Result time: {read_time}")
+print(f"Result time: {result_time}")
 
 # Wydruk wyników
 result.show()
