@@ -8,7 +8,7 @@ table = "bigquery-public-data:github_repos.sample_contents"
 
 spark = SparkSession.builder \
           .appName("pyspark-example") \
-          .config("spark.jars","gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.12-0.26.0.jar") \
+          .config("spark.jars","gs://spark-lib/bigquery/spark-3.4-bigquery-0.35.1.jar") \
           .getOrCreate()
 
 read_start = time.time()
