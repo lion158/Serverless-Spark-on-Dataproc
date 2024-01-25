@@ -1,4 +1,4 @@
-# spark-serverless-project
+# Spark serverless on Dataproc Google Cloud
 
 ### Why Google Cloud?
 Google Cloud is a cloud platform by Google that offers the capability to store data in the cloud, perform cloud-based computations, and create and manage web applications. Google Cloud provides various types of computing resources, allowing the adjustment of resources to the specific requirements of a given project. By leveraging services such as Cloud Storage, it is possible to efficiently store and process large datasets. Utilizing a cloud solution enables the scaling of data storage space and computational resources as needed. Google Cloud delivers tools for monitoring resource utilization in real-time, enabling analysis and responsive actions as events occur.
