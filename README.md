@@ -1,5 +1,13 @@
 # spark-serverless-project
-work in progress
+
+### Why Google Cloud?
+Google Cloud is a cloud platform by Google that offers the capability to store data in the cloud, perform cloud-based computations, and create and manage web applications. Google Cloud provides various types of computing resources, allowing the adjustment of resources to the specific requirements of a given project. By leveraging services such as Cloud Storage, it is possible to efficiently store and process large datasets. Utilizing a cloud solution enables the scaling of data storage space and computational resources as needed. Google Cloud delivers tools for monitoring resource utilization in real-time, enabling analysis and responsive actions as events occur.
+
+### What is Dataproc?
+Dataproc is a fast, easy-to-use, fully managed cloud service for running Apache Spark clusters in a simpler, more cost-efficient way. You can scale the number of worker nodes in the cluster based on your needs. Dataproc integrates with other Google Cloud services like Cloud Storage and enables to manage data effectively. There is a possibility to use auto-scaling to dynamically adjust cluster size based on the workload.
+
+### Serverless Spark:
+Serverless is a cloud computing model where cloud is responsible for infrastructure and automatically allocates needed resources. Thanks to that users do not have to manage servers cloud does it for them. Users pay only for the resources used. This model is also scalable. Google Cloud's fully managed and serverless enterprise data warehouse solution lets you run and write Spark jobs directly from the interface.
 
 ### Account creation
 To set up a Google Cloud account, we have two options, we can set up a full account with all the functionality offered or we can use a test account in which we receive 300\$ to use within 90 days. We opted for the test account. The disadvantage was that, although we only wanted to use the test version, we had to plug in our card. Google argues that this is a self-test, but at the same time guarantees that no funds will be collected until we upgrade to a full account. Nevertheless, distaste remains because not everyone likes to give out such important data if it is not necessary, and it would be nice to be able to use, for example, student email verification (in the case of students). As a matter of interest, the amount of US$ 300 was converted into the currency of our country at the time the account was opened.
